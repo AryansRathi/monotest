@@ -1,0 +1,1274 @@
+---
+model:
+    baseClass:
+        name: 'bench-w0t1'
+        description: ''
+        created: '2026-04-03T11:31:56.04Z'
+        updated: '2026-04-03T11:39:08.838Z'
+        baseType: 'ER'
+        elementUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+        parentUUID: null
+    version:
+        major: 1
+        minor: 0
+        patch: 0
+    currentStage: 'DRAFT'
+    stagedDatasource:
+        draftUUID: null
+        testUUID: null
+        previewUUID: null
+        productionUUID: null
+        isInternal: true
+    entities:
+        - tableName: 'bench-w0t1_visitor'
+          baseClass:
+              name: 'Visitor'
+              description: 'Visitor information'
+              created: '2026-04-03T11:31:56.161Z'
+              updated: '2026-04-03T11:37:01.904Z'
+              baseType: 'ENTITY'
+              elementUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+              parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+          datasourceEntity: null
+          attributes:
+              - baseClass:
+                    name: 'visitorname'
+                    description: ''
+                    created: '2026-04-03T11:31:56.161Z'
+                    updated: '2026-04-03T11:31:56.161Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '2f4c44d0-9422-4356-8273-0988ff2bb5f5'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'visitorname'
+                dataType: 'CHAR'
+                size: 100
+                scale: 0
+                ordinal: 0
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'username'
+                    description: ''
+                    created: '2026-04-03T11:32:44.903Z'
+                    updated: '2026-04-03T11:32:44.903Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '72675003-276b-4933-aff2-428dd1cfd89e'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'username'
+                dataType: 'VARCHAR'
+                size: 100
+                scale: 0
+                ordinal: 1
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'password'
+                    description: ''
+                    created: '2026-04-03T11:32:51.215Z'
+                    updated: '2026-04-03T11:32:51.215Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'f5868c39-5b50-4e3e-b6a2-430a748222fd'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'password'
+                dataType: 'VARCHAR'
+                size: 100
+                scale: 0
+                ordinal: 2
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'address'
+                    description: ''
+                    created: '2026-04-03T11:33:06.543Z'
+                    updated: '2026-04-03T11:33:06.543Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '67168929-3058-4c7e-ac01-bb649f46f324'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'address'
+                dataType: 'TEXT'
+                size: 2147483647
+                scale: 0
+                ordinal: 3
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'city'
+                    description: ''
+                    created: '2026-04-03T11:33:27.863Z'
+                    updated: '2026-04-03T11:33:27.863Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '723ce3a4-5b49-42ec-987f-6d11e23e5dd9'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'city'
+                dataType: 'VARCHAR'
+                size: 100
+                scale: 0
+                ordinal: 4
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'emailid'
+                    description: ''
+                    created: '2026-04-03T11:33:47.007Z'
+                    updated: '2026-04-03T11:33:47.007Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'd9aa4254-d42c-4912-8634-be2783e11388'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'emailid'
+                dataType: 'VARCHAR'
+                size: 100
+                scale: 0
+                ordinal: 5
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'phonenumber'
+                    description: ''
+                    created: '2026-04-03T11:33:53.47Z'
+                    updated: '2026-04-03T11:33:53.47Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'ed1e0a56-fdb0-456a-bb0a-5ab28f65872a'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'phonenumber'
+                dataType: 'INT16'
+                size: 5
+                scale: 0
+                ordinal: 6
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'age'
+                    description: ''
+                    created: '2026-04-03T11:34:00.542Z'
+                    updated: '2026-04-03T11:34:00.542Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '8a7ba00a-ad3c-48a8-b30f-d6cfb8d0aa8c'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'age'
+                dataType: 'INT32'
+                size: 10
+                scale: 0
+                ordinal: 7
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'visitorcount'
+                    description: ''
+                    created: '2026-04-03T11:34:14.321Z'
+                    updated: '2026-04-03T11:34:14.321Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '2cd8624e-b724-421c-a062-186f3305dd60'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'visitorcount'
+                dataType: 'INT16'
+                size: 5
+                scale: 0
+                ordinal: 8
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'vid'
+                    description: ''
+                    created: '2026-04-03T11:34:35.223Z'
+                    updated: '2026-04-03T11:34:35.223Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'vid'
+                dataType: 'INT64'
+                size: 19
+                scale: 0
+                ordinal: 9
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: true
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'salary'
+                    description: ''
+                    created: '2026-04-03T11:34:48.91Z'
+                    updated: '2026-04-03T11:34:48.91Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'ae47902b-26fb-4808-98bb-09e426dea3a0'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'salary'
+                dataType: 'DECIMAL'
+                size: 10
+                scale: 2
+                ordinal: 10
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'rating'
+                    description: ''
+                    created: '2026-04-03T11:35:17.966Z'
+                    updated: '2026-04-03T11:35:17.966Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '69c61193-1a11-44e3-b4ed-ccb4beae23ff'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'rating'
+                dataType: 'REAL'
+                size: 8
+                scale: 8
+                ordinal: 11
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'birthday'
+                    description: ''
+                    created: '2026-04-03T11:35:50.295Z'
+                    updated: '2026-04-03T11:35:50.295Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '0dc14a0f-e757-486b-a8a5-7cbde62d7d79'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'birthday'
+                dataType: 'TIMESTAMP'
+                size: 35
+                scale: 6
+                ordinal: 12
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'file'
+                    description: ''
+                    created: '2026-04-03T11:36:05.591Z'
+                    updated: '2026-04-03T11:36:05.591Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'bb323277-270f-4999-8a13-00837b3e68e4'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'file'
+                dataType: 'FILE'
+                size: 100
+                scale: 0
+                ordinal: 13
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'signature'
+                    description: ''
+                    created: '2026-04-03T11:36:22.375Z'
+                    updated: '2026-04-03T11:36:22.375Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'e5ac9a98-7f4c-47d4-be56-13f744940746'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'signature'
+                dataType: 'BINARY'
+                size: 2147483647
+                scale: 0
+                ordinal: 14
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'uiqueidentifier'
+                    description: ''
+                    created: '2026-04-03T11:36:27.831Z'
+                    updated: '2026-04-03T11:36:27.831Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '52eca577-662a-4809-9354-3de670e643d4'
+                    parentUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                columnName: 'uiqueidentifier'
+                dataType: 'UNIQUEIDENTIFIER'
+                size: 2147483647
+                scale: 0
+                ordinal: 15
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+          position:
+              x: 0
+              'y': 0
+          indexes: []
+          isPublished: false
+          isSaved: true
+        - tableName: 'bench-w0t1_visitortoplace'
+          baseClass:
+              name: 'visitortoplace'
+              description: 'visitortoplace'
+              created: '2026-04-03T11:36:59.389Z'
+              updated: '2026-04-03T11:39:22.275Z'
+              baseType: 'ENTITY'
+              elementUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+              parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+          datasourceEntity: null
+          attributes:
+              - baseClass:
+                    name: 'visitid'
+                    description: ''
+                    created: '2026-04-03T11:36:59.389Z'
+                    updated: '2026-04-03T11:36:59.389Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+                    parentUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                columnName: 'visitid'
+                dataType: 'INT64'
+                size: 19
+                scale: 0
+                ordinal: 0
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: false
+                isForeignKey: true
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'entrydate'
+                    description: ''
+                    created: '2026-04-03T11:37:29.052Z'
+                    updated: '2026-04-03T11:37:29.052Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'ff394040-98a7-4dea-b237-b8931757de33'
+                    parentUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                columnName: 'entrydate'
+                dataType: 'DATE'
+                size: 13
+                scale: 0
+                ordinal: 1
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'exitdate'
+                    description: ''
+                    created: '2026-04-03T11:37:50.883Z'
+                    updated: '2026-04-03T11:37:50.883Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '95472827-f706-4807-ad5d-b8a136cdb0f7'
+                    parentUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                columnName: 'exitdate'
+                dataType: 'DATE'
+                size: 13
+                scale: 0
+                ordinal: 2
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'entrytime'
+                    description: ''
+                    created: '2026-04-03T11:38:02.01Z'
+                    updated: '2026-04-03T11:38:02.01Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'fea94646-5b63-4ff2-a6ba-8017117b054f'
+                    parentUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                columnName: 'entrytime'
+                dataType: 'TIME'
+                size: 15
+                scale: 6
+                ordinal: 3
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'exittime'
+                    description: ''
+                    created: '2026-04-03T11:38:13.259Z'
+                    updated: '2026-04-03T11:38:13.259Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: 'faf468c3-e75a-4a25-b662-ee8b8f4df896'
+                    parentUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                columnName: 'exittime'
+                dataType: 'TIME'
+                size: 15
+                scale: 6
+                ordinal: 4
+                defaultValue: ''
+                isNullable: true
+                isPrimaryKey: false
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+              - baseClass:
+                    name: 'pid'
+                    description: ''
+                    created: '2026-04-03T11:38:19.602Z'
+                    updated: '2026-04-03T11:38:19.602Z'
+                    baseType: 'ATTRIBUTE'
+                    elementUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+                    parentUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                columnName: 'pid'
+                dataType: 'INT16'
+                size: 5
+                scale: 0
+                ordinal: 5
+                defaultValue: ''
+                isNullable: false
+                isPrimaryKey: true
+                isForeignKey: false
+                hasDefaultValue: false
+                datasourceAttribute: ''
+                isPublished: false
+                isSaved: true
+          position:
+              x: 645
+              'y': 203
+          indexes: []
+          isPublished: false
+          isSaved: true
+    areas: []
+    relationships:
+        - elementUUID: 'bd12838f-4cb9-445a-87ae-ef276e359137'
+          source:
+              id: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+              port: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+          target:
+              id: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+              port: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+    svg: ''
+    versionSummary: 'initial version'
+    versionDescription: ''
+    customPolicy: null
+    technicalName: 'bench-w0t1'
+queries:
+    - baseClass:
+          name: 'select all Visitor'
+          description: 'Select all query for visitor'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'QUERY'
+          elementUUID: '4376c987-6826-47cf-b43b-7aa80ef791f7'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_select-all-visitor'
+      queryType: 'SELECT_ALL'
+      entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+      selectAttributes:
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2f4c44d0-9422-4356-8273-0988ff2bb5f5'
+            ordinal: 0
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '72675003-276b-4933-aff2-428dd1cfd89e'
+            ordinal: 1
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'f5868c39-5b50-4e3e-b6a2-430a748222fd'
+            ordinal: 2
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '67168929-3058-4c7e-ac01-bb649f46f324'
+            ordinal: 3
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '723ce3a4-5b49-42ec-987f-6d11e23e5dd9'
+            ordinal: 4
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'd9aa4254-d42c-4912-8634-be2783e11388'
+            ordinal: 5
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ed1e0a56-fdb0-456a-bb0a-5ab28f65872a'
+            ordinal: 6
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '8a7ba00a-ad3c-48a8-b30f-d6cfb8d0aa8c'
+            ordinal: 7
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2cd8624e-b724-421c-a062-186f3305dd60'
+            ordinal: 8
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+            ordinal: 9
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ae47902b-26fb-4808-98bb-09e426dea3a0'
+            ordinal: 10
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '69c61193-1a11-44e3-b4ed-ccb4beae23ff'
+            ordinal: 11
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '0dc14a0f-e757-486b-a8a5-7cbde62d7d79'
+            ordinal: 12
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'bb323277-270f-4999-8a13-00837b3e68e4'
+            ordinal: 13
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'e5ac9a98-7f4c-47d4-be56-13f744940746'
+            ordinal: 14
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '52eca577-662a-4809-9354-3de670e643d4'
+            ordinal: 15
+      joins: []
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions: []
+          type: 'conditionGroup'
+          uuid: 'b8d295a6-bd85-43cb-801c-cbf46316c326'
+          ordinal: 0
+      orderBy: []
+      offset: null
+      limit: null
+      groupBy: []
+      isAutoGenerated: true
+    - baseClass:
+          name: 'select by pk Visitor'
+          description: 'Select by primary key query for visitor'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'QUERY'
+          elementUUID: 'b1ca2e10-7cfd-49e9-8054-3c21871afb31'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_select-by-pk-visitor'
+      queryType: 'SELECT_BY_PK'
+      entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+      selectAttributes:
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2f4c44d0-9422-4356-8273-0988ff2bb5f5'
+            ordinal: 0
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '72675003-276b-4933-aff2-428dd1cfd89e'
+            ordinal: 1
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'f5868c39-5b50-4e3e-b6a2-430a748222fd'
+            ordinal: 2
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '67168929-3058-4c7e-ac01-bb649f46f324'
+            ordinal: 3
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '723ce3a4-5b49-42ec-987f-6d11e23e5dd9'
+            ordinal: 4
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'd9aa4254-d42c-4912-8634-be2783e11388'
+            ordinal: 5
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ed1e0a56-fdb0-456a-bb0a-5ab28f65872a'
+            ordinal: 6
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '8a7ba00a-ad3c-48a8-b30f-d6cfb8d0aa8c'
+            ordinal: 7
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2cd8624e-b724-421c-a062-186f3305dd60'
+            ordinal: 8
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+            ordinal: 9
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ae47902b-26fb-4808-98bb-09e426dea3a0'
+            ordinal: 10
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '69c61193-1a11-44e3-b4ed-ccb4beae23ff'
+            ordinal: 11
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '0dc14a0f-e757-486b-a8a5-7cbde62d7d79'
+            ordinal: 12
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'bb323277-270f-4999-8a13-00837b3e68e4'
+            ordinal: 13
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'e5ac9a98-7f4c-47d4-be56-13f744940746'
+            ordinal: 14
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '52eca577-662a-4809-9354-3de670e643d4'
+            ordinal: 15
+      joins: []
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions:
+              - !<basicConditionObject>
+                operator: 'EQUAL'
+                left:
+                    entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                    attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+                    ordinal: 0
+                right:
+                    value: ''
+                    uuid: 'aa4072fd-824c-4cc6-a12b-a87786dfa044'
+                    ordinal: 0
+                    name: 'vid-param'
+                type: 'basicConditionObject'
+                uuid: 'a83e03e8-d655-4c6e-8612-6e72a97b731e'
+                ordinal: 0
+          type: 'conditionGroup'
+          uuid: 'e0f66d35-d3f1-42c7-8887-7baf29c23cfd'
+          ordinal: 0
+      orderBy: []
+      offset: null
+      limit: null
+      groupBy: []
+      isAutoGenerated: true
+    - baseClass:
+          name: 'select all Visitortoplace'
+          description: 'Select all query for visitortoplace'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'QUERY'
+          elementUUID: '936af7df-2fc3-4757-b6d3-2b1bc3b65245'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_select-all-visitortoplace'
+      queryType: 'SELECT_ALL'
+      entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+      selectAttributes:
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+            ordinal: 0
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'ff394040-98a7-4dea-b237-b8931757de33'
+            ordinal: 1
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '95472827-f706-4807-ad5d-b8a136cdb0f7'
+            ordinal: 2
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'fea94646-5b63-4ff2-a6ba-8017117b054f'
+            ordinal: 3
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'faf468c3-e75a-4a25-b662-ee8b8f4df896'
+            ordinal: 4
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+            ordinal: 5
+      joins: []
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions: []
+          type: 'conditionGroup'
+          uuid: '08dec202-5f4c-4eb4-bd14-b155d2b105ca'
+          ordinal: 0
+      orderBy: []
+      offset: null
+      limit: null
+      groupBy: []
+      isAutoGenerated: true
+    - baseClass:
+          name: 'select by pk Visitortoplace'
+          description: 'Select by primary key query for visitortoplace'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'QUERY'
+          elementUUID: 'aa2979a5-4e40-4941-b005-10a1b0f0f5a2'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_select-by-pk-visitortoplace'
+      queryType: 'SELECT_BY_PK'
+      entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+      selectAttributes:
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+            ordinal: 0
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'ff394040-98a7-4dea-b237-b8931757de33'
+            ordinal: 1
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '95472827-f706-4807-ad5d-b8a136cdb0f7'
+            ordinal: 2
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'fea94646-5b63-4ff2-a6ba-8017117b054f'
+            ordinal: 3
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'faf468c3-e75a-4a25-b662-ee8b8f4df896'
+            ordinal: 4
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+            ordinal: 5
+      joins: []
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions:
+              - !<basicConditionObject>
+                operator: 'EQUAL'
+                left:
+                    entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                    attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+                    ordinal: 0
+                right:
+                    value: ''
+                    uuid: 'dcae0df8-7525-4e7d-b531-4fac917a5d63'
+                    ordinal: 0
+                    name: 'pid-param'
+                type: 'basicConditionObject'
+                uuid: 'baedabbd-2e50-4b7c-913c-e2a5c6e0e095'
+                ordinal: 0
+          type: 'conditionGroup'
+          uuid: 'c29d5e58-18c9-48bc-8255-9128b78c99b2'
+          ordinal: 0
+      orderBy: []
+      offset: null
+      limit: null
+      groupBy: []
+      isAutoGenerated: true
+commands:
+    - baseClass:
+          name: 'insert Visitor'
+          description: 'Insert command for visitor'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'COMMAND'
+          elementUUID: 'cb52c974-3177-41dd-ab0d-634be1a6defc'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_insert-visitor'
+      type: 'INSERT'
+      entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+      selectAttributes:
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2f4c44d0-9422-4356-8273-0988ff2bb5f5'
+            ordinal: 0
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '72675003-276b-4933-aff2-428dd1cfd89e'
+            ordinal: 1
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'f5868c39-5b50-4e3e-b6a2-430a748222fd'
+            ordinal: 2
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '67168929-3058-4c7e-ac01-bb649f46f324'
+            ordinal: 3
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '723ce3a4-5b49-42ec-987f-6d11e23e5dd9'
+            ordinal: 4
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'd9aa4254-d42c-4912-8634-be2783e11388'
+            ordinal: 5
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ed1e0a56-fdb0-456a-bb0a-5ab28f65872a'
+            ordinal: 6
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '8a7ba00a-ad3c-48a8-b30f-d6cfb8d0aa8c'
+            ordinal: 7
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2cd8624e-b724-421c-a062-186f3305dd60'
+            ordinal: 8
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+            ordinal: 9
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ae47902b-26fb-4808-98bb-09e426dea3a0'
+            ordinal: 10
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '69c61193-1a11-44e3-b4ed-ccb4beae23ff'
+            ordinal: 11
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '0dc14a0f-e757-486b-a8a5-7cbde62d7d79'
+            ordinal: 12
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'bb323277-270f-4999-8a13-00837b3e68e4'
+            ordinal: 13
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'e5ac9a98-7f4c-47d4-be56-13f744940746'
+            ordinal: 14
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '52eca577-662a-4809-9354-3de670e643d4'
+            ordinal: 15
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions: []
+          type: 'conditionGroup'
+          uuid: '6a367441-afe5-4a3f-8041-7f5979b9c5e3'
+          ordinal: 0
+      valueList:
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2f4c44d0-9422-4356-8273-0988ff2bb5f5'
+            ordinal: 0
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '72675003-276b-4933-aff2-428dd1cfd89e'
+            ordinal: 1
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'f5868c39-5b50-4e3e-b6a2-430a748222fd'
+            ordinal: 2
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '67168929-3058-4c7e-ac01-bb649f46f324'
+            ordinal: 3
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '723ce3a4-5b49-42ec-987f-6d11e23e5dd9'
+            ordinal: 4
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'd9aa4254-d42c-4912-8634-be2783e11388'
+            ordinal: 5
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ed1e0a56-fdb0-456a-bb0a-5ab28f65872a'
+            ordinal: 6
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '8a7ba00a-ad3c-48a8-b30f-d6cfb8d0aa8c'
+            ordinal: 7
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2cd8624e-b724-421c-a062-186f3305dd60'
+            ordinal: 8
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+            ordinal: 9
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ae47902b-26fb-4808-98bb-09e426dea3a0'
+            ordinal: 10
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '69c61193-1a11-44e3-b4ed-ccb4beae23ff'
+            ordinal: 11
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '0dc14a0f-e757-486b-a8a5-7cbde62d7d79'
+            ordinal: 12
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'bb323277-270f-4999-8a13-00837b3e68e4'
+            ordinal: 13
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'e5ac9a98-7f4c-47d4-be56-13f744940746'
+            ordinal: 14
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '52eca577-662a-4809-9354-3de670e643d4'
+            ordinal: 15
+      isAutoGenerated: true
+    - baseClass:
+          name: 'update Visitor'
+          description: 'Update visitor by primary key'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'COMMAND'
+          elementUUID: 'a83cac7c-22fd-40bb-8a1e-7bdb09dd8e81'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_update-visitor'
+      type: 'UPDATE'
+      entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+      selectAttributes:
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2f4c44d0-9422-4356-8273-0988ff2bb5f5'
+            ordinal: 0
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '72675003-276b-4933-aff2-428dd1cfd89e'
+            ordinal: 1
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'f5868c39-5b50-4e3e-b6a2-430a748222fd'
+            ordinal: 2
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '67168929-3058-4c7e-ac01-bb649f46f324'
+            ordinal: 3
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '723ce3a4-5b49-42ec-987f-6d11e23e5dd9'
+            ordinal: 4
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'd9aa4254-d42c-4912-8634-be2783e11388'
+            ordinal: 5
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ed1e0a56-fdb0-456a-bb0a-5ab28f65872a'
+            ordinal: 6
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '8a7ba00a-ad3c-48a8-b30f-d6cfb8d0aa8c'
+            ordinal: 7
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2cd8624e-b724-421c-a062-186f3305dd60'
+            ordinal: 8
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+            ordinal: 9
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ae47902b-26fb-4808-98bb-09e426dea3a0'
+            ordinal: 10
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '69c61193-1a11-44e3-b4ed-ccb4beae23ff'
+            ordinal: 11
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '0dc14a0f-e757-486b-a8a5-7cbde62d7d79'
+            ordinal: 12
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'bb323277-270f-4999-8a13-00837b3e68e4'
+            ordinal: 13
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'e5ac9a98-7f4c-47d4-be56-13f744940746'
+            ordinal: 14
+          - entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '52eca577-662a-4809-9354-3de670e643d4'
+            ordinal: 15
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions:
+              - !<basicConditionObject>
+                operator: 'EQUAL'
+                left:
+                    entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                    attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+                    ordinal: 0
+                right:
+                    value: ''
+                    uuid: '10d1a48d-555e-4f01-834f-1bbd3f711cf7'
+                    ordinal: 0
+                    name: 'vid-param'
+                type: 'basicConditionObject'
+                uuid: '718108f1-e7f2-423a-bc06-3e550484f7d6'
+                ordinal: 0
+          type: 'conditionGroup'
+          uuid: 'fb81a72f-5313-43c1-8181-7bb7c179b9a3'
+          ordinal: 0
+      valueList:
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2f4c44d0-9422-4356-8273-0988ff2bb5f5'
+            ordinal: 0
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '72675003-276b-4933-aff2-428dd1cfd89e'
+            ordinal: 1
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'f5868c39-5b50-4e3e-b6a2-430a748222fd'
+            ordinal: 2
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '67168929-3058-4c7e-ac01-bb649f46f324'
+            ordinal: 3
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '723ce3a4-5b49-42ec-987f-6d11e23e5dd9'
+            ordinal: 4
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'd9aa4254-d42c-4912-8634-be2783e11388'
+            ordinal: 5
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ed1e0a56-fdb0-456a-bb0a-5ab28f65872a'
+            ordinal: 6
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '8a7ba00a-ad3c-48a8-b30f-d6cfb8d0aa8c'
+            ordinal: 7
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '2cd8624e-b724-421c-a062-186f3305dd60'
+            ordinal: 8
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+            ordinal: 9
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'ae47902b-26fb-4808-98bb-09e426dea3a0'
+            ordinal: 10
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '69c61193-1a11-44e3-b4ed-ccb4beae23ff'
+            ordinal: 11
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '0dc14a0f-e757-486b-a8a5-7cbde62d7d79'
+            ordinal: 12
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'bb323277-270f-4999-8a13-00837b3e68e4'
+            ordinal: 13
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: 'e5ac9a98-7f4c-47d4-be56-13f744940746'
+            ordinal: 14
+          - value: ''
+            entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+            attributeUUID: '52eca577-662a-4809-9354-3de670e643d4'
+            ordinal: 15
+      isAutoGenerated: true
+    - baseClass:
+          name: 'delete Visitor'
+          description: 'Delete visitor by primary key'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'COMMAND'
+          elementUUID: '9c376f53-920c-4f28-8c6e-1cb490563e8c'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_delete-visitor'
+      type: 'DELETE'
+      entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+      selectAttributes: []
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions:
+              - !<basicConditionObject>
+                operator: 'EQUAL'
+                left:
+                    entityUUID: '7cb2108d-bc10-461f-a9be-4bf923da9dd1'
+                    attributeUUID: 'ca72b5c0-5c03-4bc3-a143-c622189cfb0d'
+                    ordinal: 0
+                right:
+                    value: ''
+                    uuid: 'fd0f2782-5c4e-46ec-999f-22360e6669b4'
+                    ordinal: 0
+                    name: 'vid-param'
+                type: 'basicConditionObject'
+                uuid: '459220ac-7481-447d-b46d-fac6dfa91214'
+                ordinal: 0
+          type: 'conditionGroup'
+          uuid: '13ca8c35-7b9e-4f3a-ac35-85f1ce3544a0'
+          ordinal: 0
+      valueList: []
+      isAutoGenerated: true
+    - baseClass:
+          name: 'insert Visitortoplace'
+          description: 'Insert command for visitortoplace'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'COMMAND'
+          elementUUID: '6e8ecbac-f488-44a3-9076-001b0abc9d98'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_insert-visitortoplace'
+      type: 'INSERT'
+      entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+      selectAttributes:
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+            ordinal: 0
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'ff394040-98a7-4dea-b237-b8931757de33'
+            ordinal: 1
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '95472827-f706-4807-ad5d-b8a136cdb0f7'
+            ordinal: 2
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'fea94646-5b63-4ff2-a6ba-8017117b054f'
+            ordinal: 3
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'faf468c3-e75a-4a25-b662-ee8b8f4df896'
+            ordinal: 4
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+            ordinal: 5
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions: []
+          type: 'conditionGroup'
+          uuid: 'f4a66f4a-a70b-44c0-b1a4-be77fd571918'
+          ordinal: 0
+      valueList:
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+            ordinal: 0
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'ff394040-98a7-4dea-b237-b8931757de33'
+            ordinal: 1
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '95472827-f706-4807-ad5d-b8a136cdb0f7'
+            ordinal: 2
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'fea94646-5b63-4ff2-a6ba-8017117b054f'
+            ordinal: 3
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'faf468c3-e75a-4a25-b662-ee8b8f4df896'
+            ordinal: 4
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+            ordinal: 5
+      isAutoGenerated: true
+    - baseClass:
+          name: 'update Visitortoplace'
+          description: 'Update visitortoplace by primary key'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'COMMAND'
+          elementUUID: '5b02cd75-43db-40c3-b755-733382132b8b'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_update-visitortoplace'
+      type: 'UPDATE'
+      entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+      selectAttributes:
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+            ordinal: 0
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'ff394040-98a7-4dea-b237-b8931757de33'
+            ordinal: 1
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '95472827-f706-4807-ad5d-b8a136cdb0f7'
+            ordinal: 2
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'fea94646-5b63-4ff2-a6ba-8017117b054f'
+            ordinal: 3
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'faf468c3-e75a-4a25-b662-ee8b8f4df896'
+            ordinal: 4
+          - entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+            ordinal: 5
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions:
+              - !<basicConditionObject>
+                operator: 'EQUAL'
+                left:
+                    entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                    attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+                    ordinal: 0
+                right:
+                    value: ''
+                    uuid: 'c40eb57b-dcb4-4b99-85af-658decc6d629'
+                    ordinal: 0
+                    name: 'pid-param'
+                type: 'basicConditionObject'
+                uuid: 'c407826d-bdde-4773-8e03-5f7a974b89b6'
+                ordinal: 0
+          type: 'conditionGroup'
+          uuid: 'c22283d9-4846-4d5a-949e-0536cc46fe0d'
+          ordinal: 0
+      valueList:
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'c5e66ef2-0750-470f-8914-08ff9da08444'
+            ordinal: 0
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'ff394040-98a7-4dea-b237-b8931757de33'
+            ordinal: 1
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '95472827-f706-4807-ad5d-b8a136cdb0f7'
+            ordinal: 2
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'fea94646-5b63-4ff2-a6ba-8017117b054f'
+            ordinal: 3
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: 'faf468c3-e75a-4a25-b662-ee8b8f4df896'
+            ordinal: 4
+          - value: ''
+            entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+            attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+            ordinal: 5
+      isAutoGenerated: true
+    - baseClass:
+          name: 'delete Visitortoplace'
+          description: 'Delete visitortoplace by primary key'
+          created: '2026-04-03T11:39:12.618Z'
+          updated: '2026-04-03T11:39:12.618Z'
+          baseType: 'COMMAND'
+          elementUUID: 'e0272a93-6058-4715-a62b-7c11e416c126'
+          parentUUID: '1a9ea14c-1d6a-4fc7-ab04-272264a9e55d'
+      technicalName: 'bench-w0t1_delete-visitortoplace'
+      type: 'DELETE'
+      entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+      selectAttributes: []
+      where: !<conditionGroup>
+          logicalOperatorType: 'AND'
+          conditions:
+              - !<basicConditionObject>
+                operator: 'EQUAL'
+                left:
+                    entityUUID: '95ccfe7e-ddee-4377-9090-c77aa0b6da7a'
+                    attributeUUID: '58e4e388-6868-42c6-afd3-c547f7d0accf'
+                    ordinal: 0
+                right:
+                    value: ''
+                    uuid: '7b6ed79c-8740-4a5c-bc18-712dd8942a4c'
+                    ordinal: 0
+                    name: 'pid-param'
+                type: 'basicConditionObject'
+                uuid: '584796ec-d0d7-4b92-b54c-dabbcb5fd6c1'
+                ordinal: 0
+          type: 'conditionGroup'
+          uuid: '43c24add-1d3b-4286-835a-02c3dd5aee18'
+          ordinal: 0
+      valueList: []
+      isAutoGenerated: true

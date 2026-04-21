@@ -1,0 +1,313 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Fake Store API",
+        "description": "Eine API für den Zugriff auf gefälschte Store-Daten",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://fake-store-api.mock.beeceptor.com"
+        }
+    ],
+    "paths": {
+        "/api/products": {
+            "get": {
+                "summary": "Liste aller Produkte abrufen",
+                "description": "Gibt eine Liste aller verfügbaren Produkte zurück.",
+                "responses": {
+                    "200": {
+                        "description": "Erfolgreiche Antwort mit einer Liste von Produkten",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Product"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/products/{id}": {
+            "get": {
+                "summary": "Einzelnes Produkt abrufen",
+                "description": "Gibt die Details eines bestimmten Produkts zurück.",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Erfolgreiche Antwort mit den Produktdetails",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Product"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/users": {
+            "get": {
+                "summary": "Benutzerliste abrufen",
+                "description": "Gibt eine Liste aller registrierten Benutzer zurück.",
+                "responses": {
+                    "200": {
+                        "description": "Erfolgreiche Antwort mit einer Benutzerliste",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/User"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/carts": {
+            "get": {
+                "summary": "Einkaufswagen abrufen",
+                "description": "Gibt den Einkaufswagen des eingeloggten Benutzers zurück.",
+                "responses": {
+                    "200": {
+                        "description": "Erfolgreiche Antwort mit Einkaufswagen-Daten",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Cart"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/orders": {
+            "get": {
+                "summary": "Liste der Bestellungen abrufen",
+                "description": "Gibt eine Liste der Bestellungen der Benutzer zurück.",
+                "responses": {
+                    "200": {
+                        "description": "Erfolgreiche Antwort mit Bestelldaten",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Order"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "Neue Bestellung erstellen oder aktualisieren",
+                "description": "Erstellt eine neue Bestellung oder aktualisiert eine bestehende.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Order"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Erfolgreiche Antwort mit Bestellstatus",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/OrderResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Product": {
+                "type": "object",
+                "properties": {
+                    "product_id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "unit": {
+                        "type": "string"
+                    },
+                    "image": {
+                        "type": "string"
+                    },
+                    "discount": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "availability": {
+                        "type": "boolean"
+                    },
+                    "brand": {
+                        "type": "string"
+                    },
+                    "category": {
+                        "type": "string"
+                    },
+                    "rating": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "test": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    },
+                    "reviews": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Review"
+                        }
+                    }
+                }
+            },
+            "Review": {
+                "type": "object",
+                "properties": {
+                    "user_id": {
+                        "type": "integer"
+                    },
+                    "rating": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "comment": {
+                        "type": "string"
+                    },
+                    "test": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            },
+            "CartItem": {
+                "type": "object",
+                "properties": {
+                    "product_id": {
+                        "type": "integer"
+                    },
+                    "quantity": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "Cart": {
+                "type": "object",
+                "properties": {
+                    "cart_id": {
+                        "type": "integer"
+                    },
+                    "user_id": {
+                        "type": "integer"
+                    },
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CartItem"
+                        }
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "user_id": {
+                        "type": "integer"
+                    },
+                    "username": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "password": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Order": {
+                "type": "object",
+                "properties": {
+                    "order_id": {
+                        "type": "integer"
+                    },
+                    "user_id": {
+                        "type": "integer"
+                    },
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/CartItem"
+                        }
+                    },
+                    "total_price": {
+                        "type": "number",
+                        "format": "float"
+                    },
+                    "status": {
+                        "type": "string"
+                    }
+                }
+            },
+            "OrderResponse": {
+                "type": "object",
+                "properties": {
+                    "order_id": {
+                        "type": "integer"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

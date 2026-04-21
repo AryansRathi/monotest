@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "types": ["node"],
+        "paths": {
+            "@fixtures/*": ["./fixtures/*"],
+            "@factories/*": ["./factories/*"],
+            "@pages/*": ["./pages/*"],
+            "@test.config": ["./test.config.ts"]
+        },
+        "pretty": true,
+        "preserveConstEnums": true,
+        "skipLibCheck": true
+    },
+    "include": ["**/*"]
+}
