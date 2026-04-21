@@ -1,0 +1,35 @@
+{
+    "name": "playwright-tests",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "format": "oxfmt",
+        "format:check": "oxfmt --check",
+        "oxlint": "oxlint -c .oxlintrc.json --tsconfig=tsconfig.json --import-plugin",
+        "eslint": "eslint",
+        "lint": "npm run eslint && npm run oxlint",
+        "test": "docker compose -f docker/docker-compose.yml build && docker compose -f docker/docker-compose.yml run --remove-orphans --rm ix25-e2e-tests",
+        "test:ui": "playwright test --ui",
+        "test:codegen": "playwright codegen --ignore-https-errors"
+    },
+    "dependencies": {
+        "@axe-core/playwright": "4.11.1",
+        "@faker-js/faker": "10.4.0",
+        "@playwright/test": "1.58.2",
+        "axe-html-reporter": "2.2.11",
+        "dotenv": "17.4.2",
+        "js-yaml": "4.1.1",
+        "mssql": "12.2.3",
+        "pg": "8.20.0",
+        "yaml": "2.8.3"
+    },
+    "devDependencies": {
+        "@eslint/js": "10.0.1",
+        "@types/mssql": "9.1.11",
+        "@types/node": "25.6.0",
+        "@types/pg": "8.20.0",
+        "eslint": "10.2.0",
+        "eslint-plugin-oxlint": "1.60.0",
+        "oxlint": "1.60.0"
+    }
+}

@@ -1,0 +1,79 @@
+services:
+    ix25-e2e-tests:
+        build:
+            context: ../
+            dockerfile: docker/Dockerfile
+            args:
+                USER_ID: 1000
+                GROUP_ID: 1000
+        image: 'ix25-e2e-tests:latest'
+        container_name: ix25-e2e-tests
+        working_dir: /app
+        volumes:
+            - '../test-results:/app/test-results'
+        depends_on:
+            external_postgres:
+                condition: service_healthy
+            external_sqlserver:
+                condition: service_healthy
+        env_file:
+            - path: ../.env.local
+              required: false
+        environment:
+            - BASE_URL
+            - CI
+            - LOCALE
+            - SLOWMO
+            - BROWSER
+            - WORKERS
+        network_mode: host
+        init: true
+        ipc: host
+        user: '1000:1000'
+
+    external_postgres:
+        image: 'postgres:17-alpine'
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+        restart: unless-stopped
+        container_name: external_postgres
+        volumes:
+            - './external-db-init/postgres-init.sql:/docker-entrypoint-initdb.d/init.sql'
+        ports:
+            - '5432:5432'
+        healthcheck:
+            test:
+                - CMD-SHELL
+                - pg_isready -U postgres
+            interval: 5s
+            timeout: 5s
+            retries: 10
+
+    external_sqlserver:
+        image: 'mcr.microsoft.com/mssql/server:2025-latest'
+        environment:
+            ACCEPT_EULA: 'Y'
+            MSSQL_SA_PASSWORD: 'sqlserver@123'
+            MSSQL_PID: 'Developer'
+        restart: unless-stopped
+        container_name: external_sqlserver
+        ports:
+            - '1433:1433'
+        volumes:
+            - './external-db-init/mssql-entrypoint.sh:/scripts/entrypoint.sh'
+            - './external-db-init/mssql-init.sql:/scripts/init.sql'
+        command: /bin/bash /scripts/entrypoint.sh
+        healthcheck:
+            test:
+                - CMD-SHELL
+                - /opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P "sqlserver@123" -d externaldb -Q "SELECT 1" -C -N
+            interval: 10s
+            timeout: 5s
+            retries: 10
+            start_period: 40s
+
+networks:
+    default:
+        name: ix25-network
+        external: true
